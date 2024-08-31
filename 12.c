@@ -10,11 +10,11 @@ int main(){
     int fd=open("prog12.txt",O_RDONLY|O_WRONLY);
     int mode=fcntl(fd,F_GETFL);
     switch(mode){
-    case 32768 : printf("r"); break;
-    case 32769 : printf("w"); break;
-    case 33792 : printf("a"); break;
-    case 32770 : printf("r+ || w+"); break;
-    case 32794 : printf("a+"); break;
+    case 32768 : printf("read only"); break;
+    case 32769 : printf("write only"); break;
+    case 33792 : printf("append"); break;
+    case 32770 : printf("Read and write"); break;
+    case 32794 : printf("Read and append"); break;
 }
 printf("%d",mode);
     return 0;
@@ -22,5 +22,6 @@ printf("%d",mode);
 
 
 /*
-
+mohit@mohit-VMware-Virtual-Platform:~/Desktop/Handson List1$ ./a.out prog12.txt
+write only32769mohit@mohit-VMware-Virtual-Platform:~/Desktop/Handson List1$ 
 */

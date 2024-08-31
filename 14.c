@@ -46,6 +46,8 @@ int main(int argc, char *argv[]) {
 }
 
 /*
-./a.out prog11.txt
+mohit@mohit-VMware-Virtual-Platform:~/Desktop/Handson List1$ gcc 14.c
+mohit@mohit-VMware-Virtual-Platform:~/Desktop/Handson List1$ ./a.out prog14.txt
 This is a regular file.
+
 */
