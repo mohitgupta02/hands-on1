@@ -1,5 +1,5 @@
-/*	Raj Kanani
-	MT2024074
+/*	Mohit Gupta
+	MT2024049
 	Write a program to open a file, duplicate the file descriptor and append the file with both the
 	descriptors and check whether the file is updated properly or not.
 	a. use dup
