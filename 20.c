@@ -6,7 +6,7 @@ Find out the priority of your running program. Modify the priority with nice com
 
 
 #include <stdio.h>       // For printf()
-#include <unistd.h>      // For getpid() and nice()
+#include <unistd.h>      // nice()
 #include <sys/resource.h>// For getpriority() and PRIO_PROCESS
 
 int main(int argc, char *argv[]) {
