@@ -14,13 +14,13 @@ int main(int argc, char *argv[]) {
   int pid = getpid();
 	int niceVal = getpriority(PRIO_PROCESS, 0);
 	
-	printf("Priority of process with PID %d is %d\n", pid, niceVal);
+	printf("nice value = %d\n", niceVal);
 	
 	nice(10); // updating the priority(nice value) to 10 of the current process 
 	niceVal = getpriority(PRIO_PROCESS, 0); //first argument : priority of the process is being queried , second argument : 0 : means we are refering to the current process
 
 	
-	printf("Modified priority of process %d\n", niceVal);
+	printf("priority %d\n", niceVal);
 
   return 0;
 }
